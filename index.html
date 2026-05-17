@@ -54,10 +54,12 @@
             padding: 15px 20px;
         }
 
+        /* Logo Boyutu Büyütüldü ve Siyah Logoyu Beyaza Çeviren Premium Filtre Eklendi */
         .logo img {
-            height: 50px;
+            height: 75px; /* Boyut büyütüldü */
             width: auto;
             object-fit: contain;
+            filter: brightness(0) invert(1); /* Siyah logoyu kusursuz beyaza çevirir */
         }
 
         nav ul {
@@ -292,6 +294,7 @@
 
         @media (max-width: 768px) {
             nav ul { display: none; } 
+            .logo img { height: 55px; } /* Mobilde aşırı büyümesini engellemek için dengelendi */
             .hero-content h1 { font-size: 2.5rem; }
             section { padding: 60px 15px; }
             .section-title h2 { font-size: 2.2rem; }
@@ -303,7 +306,7 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <img src="L1.png" class="auto-img" alt="Olivia Logo">
+                <img src="L1.PNG" alt="Olivia Logo">
             </div>
             <nav>
                 <ul>
@@ -334,23 +337,23 @@
             <h2 data-tr="Odalarımız" data-en="Our Rooms">Odalarımız</h2>
         </div>
         <div class="grid-container">
-            <div class="media-card"><img src="O1.jpeg" class="auto-img" alt="Room 1"></div>
-            <div class="media-card"><img src="O2.jpeg" class="auto-img" alt="Room 2"></div>
-            <div class="media-card"><img src="O3.jpeg" class="auto-img" alt="Room 3"></div>
-            <div class="media-card"><img src="O4.jpeg" class="auto-img" alt="Room 4"></div>
-            <div class="media-card"><img src="O5.jpeg" class="auto-img" alt="Room 5"></div>
-            <div class="media-card"><img src="O6.jpeg" class="auto-img" alt="Room 6"></div>
-            <div class="media-card"><img src="O7.jpeg" class="auto-img" alt="Room 7"></div>
-            <div class="media-card"><img src="O8.jpeg" class="auto-img" alt="Room 8"></div>
-            <div class="media-card"><img src="O9.jpeg" class="auto-img" alt="Room 9"></div>
-            <div class="media-card"><img src="O10.jpeg" class="auto-img" alt="Room 10"></div>
-            <div class="media-card"><img src="O11.jpeg" class="auto-img" alt="Room 11"></div>
-            <div class="media-card"><img src="O12.jpeg" class="auto-img" alt="Room 12"></div>
-            <div class="media-card"><img src="O13.jpeg" class="auto-img" alt="Room 13"></div>
-            <div class="media-card"><img src="O14.jpeg" class="auto-img" alt="Room 14"></div>
-            <div class="media-card"><img src="O15.jpeg" class="auto-img" alt="Room 15"></div>
-            <div class="media-card"><img src="O16.jpeg" class="auto-img" alt="Room 16"></div>
-            <div class="media-card"><img src="O17.jpeg" class="auto-img" alt="Room 17"></div>
+            <div class="media-card"><img src="O1.jpeg" alt="Room 1"></div>
+            <div class="media-card"><img src="O2.jpeg" alt="Room 2"></div>
+            <div class="media-card"><img src="O3.jpeg" alt="Room 3"></div>
+            <div class="media-card"><img src="O4.jpeg" alt="Room 4"></div>
+            <div class="media-card"><img src="O5.jpeg" alt="Room 5"></div>
+            <div class="media-card"><img src="O6.jpeg" alt="Room 6"></div>
+            <div class="media-card"><img src="O7.jpeg" alt="Room 7"></div>
+            <div class="media-card"><img src="O8.jpeg" alt="Room 8"></div>
+            <div class="media-card"><img src="O9.jpeg" alt="Room 9"></div>
+            <div class="media-card"><img src="O10.jpeg" alt="Room 10"></div>
+            <div class="media-card"><img src="O11.jpeg" alt="Room 11"></div>
+            <div class="media-card"><img src="O12.jpeg" alt="Room 12"></div>
+            <div class="media-card"><img src="O13.jpeg" alt="Room 13"></div>
+            <div class="media-card"><img src="O14.jpeg" alt="Room 14"></div>
+            <div class="media-card"><img src="O15.jpeg" alt="Room 15"></div>
+            <div class="media-card"><img src="O16.jpeg" alt="Room 16"></div>
+            <div class="media-card"><img src="O17.jpeg" alt="Room 17"></div>
         </div>
     </section>
 
@@ -365,19 +368,19 @@
         </div>
 
         <div class="grid-container">
-            <div class="media-card"><img src="B1.jpeg" class="auto-img" alt="Bistro 1"></div>
-            <div class="media-card"><img src="B2.jpeg" class="auto-img" alt="Bistro 2"></div>
-            <div class="media-card"><img src="B3.jpeg" class="auto-img" alt="Bistro 3"></div>
-            <div class="media-card"><img src="B4.jpeg" class="auto-img" alt="Bistro 4"></div>
-            <div class="media-card"><img src="B5.jpeg" class="auto-img" alt="Bistro 5"></div>
-            <div class="media-card"><img src="B6.jpeg" class="auto-img" alt="Bistro 6"></div>
-            <div class="media-card"><img src="B7.jpeg" class="auto-img" alt="Bistro 7"></div>
-            <div class="media-card"><img src="B8.jpeg" class="auto-img" alt="Bistro 8"></div>
-            <div class="media-card"><img src="B9.jpeg" class="auto-img" alt="Bistro 9"></div>
-            <div class="media-card"><img src="B10.jpeg" class="auto-img" alt="Bistro 10"></div>
-            <div class="media-card"><img src="B11.jpeg" class="auto-img" alt="Bistro 11"></div>
-            <div class="media-card"><img src="B12.jpeg" class="auto-img" alt="Bistro 12"></div>
-            <div class="media-card"><img src="B13.jpeg" class="auto-img" alt="Bistro 13"></div>
+            <div class="media-card"><img src="B1.jpeg" alt="Bistro 1"></div>
+            <div class="media-card"><img src="B2.jpeg" alt="Bistro 2"></div>
+            <div class="media-card"><img src="B3.jpeg" alt="Bistro 3"></div>
+            <div class="media-card"><img src="B4.jpeg" alt="Bistro 4"></div>
+            <div class="media-card"><img src="B5.jpeg" alt="Bistro 5"></div>
+            <div class="media-card"><img src="B6.jpeg" alt="Bistro 6"></div>
+            <div class="media-card"><img src="B7.jpeg" alt="Bistro 7"></div>
+            <div class="media-card"><img src="B8.jpeg" alt="Bistro 8"></div>
+            <div class="media-card"><img src="B9.jpeg" alt="Bistro 9"></div>
+            <div class="media-card"><img src="B10.jpeg" alt="Bistro 10"></div>
+            <div class="media-card"><img src="B11.jpeg" alt="Bistro 11"></div>
+            <div class="media-card"><img src="B12.jpeg" alt="Bistro 12"></div>
+            <div class="media-card"><img src="B13.jpeg" alt="Bistro 13"></div>
         </div>
     </section>
 
@@ -386,29 +389,29 @@
             <h2 data-tr="Ambiyans" data-en="Ambiance">Ambiyans</h2>
         </div>
         <div class="grid-container">
-            <div class="media-card"><img src="A1.jpeg" class="auto-img" alt="Ambiance 1"></div>
-            <div class="media-card"><img src="A2.jpeg" class="auto-img" alt="Ambiance 2"></div>
-            <div class="media-card"><img src="A3.jpeg" class="auto-img" alt="Ambiance 3"></div>
-            <div class="media-card"><img src="A4.jpeg" class="auto-img" alt="Ambiance 4"></div>
-            <div class="media-card"><img src="A5.jpeg" class="auto-img" alt="Ambiance 5"></div>
-            <div class="media-card"><img src="A6.jpeg" class="auto-img" alt="Ambiance 6"></div>
-            <div class="media-card"><img src="A7.jpeg" class="auto-img" alt="Ambiance 7"></div>
-            <div class="media-card"><img src="A8.jpeg" class="auto-img" alt="Ambiance 8"></div>
-            <div class="media-card"><img src="A9.jpeg" class="auto-img" alt="Ambiance 9"></div>
-            <div class="media-card"><img src="A10.jpeg" class="auto-img" alt="Ambiance 10"></div>
-            <div class="media-card"><img src="A11.jpeg" class="auto-img" alt="Ambiance 11"></div>
-            <div class="media-card"><img src="A12.jpeg" class="auto-img" alt="Ambiance 12"></div>
-            <div class="media-card"><img src="A13.jpeg" class="auto-img" alt="Ambiance 13"></div>
-            <div class="media-card"><img src="A14.jpeg" class="auto-img" alt="Ambiance 14"></div>
-            <div class="media-card"><img src="A15.jpeg" class="auto-img" alt="Ambiance 15"></div>
-            <div class="media-card"><img src="A16.jpeg" class="auto-img" alt="Ambiance 16"></div>
-            <div class="media-card"><img src="A17.jpeg" class="auto-img" alt="Ambiance 17"></div>
-            <div class="media-card"><img src="A18.jpeg" class="auto-img" alt="Ambiance 18"></div>
-            <div class="media-card"><img src="A19.jpeg" class="auto-img" alt="Ambiance 19"></div>
-            <div class="media-card"><img src="A20.jpeg" class="auto-img" alt="Ambiance 20"></div>
-            <div class="media-card"><img src="A21.jpeg" class="auto-img" alt="Ambiance 21"></div>
-            <div class="media-card"><img src="A22.jpeg" class="auto-img" alt="Ambiance 22"></div>
-            <div class="media-card"><img src="A23.jpeg" class="auto-img" alt="Ambiance 23"></div>
+            <div class="media-card"><img src="A1.jpeg" alt="Ambiance 1"></div>
+            <div class="media-card"><img src="A2.jpeg" alt="Ambiance 2"></div>
+            <div class="media-card"><img src="A3.jpg" alt="Ambiance 3"></div>
+            <div class="media-card"><img src="A4.jpg" alt="Ambiance 4"></div>
+            <div class="media-card"><img src="A5.jpg" alt="Ambiance 5"></div>
+            <div class="media-card"><img src="A6.jpg" alt="Ambiance 6"></div>
+            <div class="media-card"><img src="A7.jpg" alt="Ambiance 7"></div>
+            <div class="media-card"><img src="A8.jpg" alt="Ambiance 8"></div>
+            <div class="media-card"><img src="A9.jpg" alt="Ambiance 9"></div>
+            <div class="media-card"><img src="A10.jpg" alt="Ambiance 10"></div>
+            <div class="media-card"><img src="A11.jpg" alt="Ambiance 11"></div>
+            <div class="media-card"><img src="A12.jpg" alt="Ambiance 12"></div>
+            <div class="media-card"><img src="A13.jpg" alt="Ambiance 13"></div>
+            <div class="media-card"><img src="A14.jpg" alt="Ambiance 14"></div>
+            <div class="media-card"><img src="A15.jpg" alt="Ambiance 15"></div>
+            <div class="media-card"><img src="A16.jpg" alt="Ambiance 16"></div>
+            <div class="media-card"><img src="A17.jpg" alt="Ambiance 17"></div>
+            <div class="media-card"><img src="A18.jpg" alt="Ambiance 18"></div>
+            <div class="media-card"><img src="A19.jpg" alt="Ambiance 19"></div>
+            <div class="media-card"><img src="A20.jpg" alt="Ambiance 20"></div>
+            <div class="media-card"><img src="A21.jpg" alt="Ambiance 21"></div>
+            <div class="media-card"><img src="A22.jpg" alt="Ambiance 22"></div>
+            <div class="media-card"><img src="A23.jpg" alt="Ambiance 23"></div>
         </div>
     </section>
 
@@ -446,28 +449,6 @@
                 element.innerText = element.getAttribute(data-${currentLang});
             });
         }
-
-        // AKILLI SİSTEM: .jpeg ve .jpg uzantı karmaşasını otomatik çözer
-        document.querySelectorAll('.auto-img').forEach(img => {
-            img.addEventListener('error', function() {
-                let src = this.src;
-
-                // Sonsuz döngü koruması
-                if (this.getAttribute('data-failed')) return;
-
-                if (src.endsWith('.jpeg')) {
-                    this.src = src.replace('.jpeg', '.jpg');
-                } else if (src.endsWith('.jpg')) {
-                    this.src = src.replace('.jpg', '.jpeg');
-                } else if (src.endsWith('.png')) {
-                    this.src = src.replace('.png', '.PNG');
-                } else if (src.endsWith('.PNG')) {
-                    this.src = src.replace('.PNG', '.png');
-                } else {
-                    this.setAttribute('data-failed', 'true');
-                }
-            });
-        });
     </script>
 </body>
 </html>
