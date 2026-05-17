@@ -3,53 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olivia Otel & Bistro | Dalyan</title>
+    <title>Olivia Hotel & Bistro | Dalyan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Georgia, serif; }
-        body { background-color: #fcfbfa; color: #22252a; line-height: 1.6; }
-        header { background-color: rgba(34, 37, 42, 0.98); position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; border-bottom: 1px solid rgba(223, 186, 107, 0.2); }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 15px 20px; }
-        .logo { color: #dfba6b; font-size: 22px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
-        .nav-right { display: flex; align-items: center; }
-        .nav-menu { display: flex; list-style: none; margin-right: 30px; }
-        .nav-menu li { margin-left: 25px; }
-        .nav-menu a { color: #ffffff; text-decoration: none; font-size: 14px; text-transform: uppercase; transition: color 0.3s; letter-spacing: 1px; }
-        .nav-menu a:hover { color: #dfba6b; }
-        .lang-switcher { display: flex; gap: 5px; border-left: 1px solid #444; padding-left: 20px; }
-        .lang-btn { background: none; border: 1px solid transparent; color: #888; cursor: pointer; font-size: 13px; font-weight: bold; padding: 4px 8px; border-radius: 3px; transition: all 0.3s; }
-        .lang-btn.active { color: #22252a; background-color: #dfba6b; border-color: #dfba6b; }
-        .lang-btn:hover:not(.active) { color: #fff; }
-        .hero { position: relative; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #fff; overflow: hidden; }
-        .hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; }
-        .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.65); z-index: 0; }
-        .hero-content { z-index: 1; padding: 20px; }
-        .hero h1 { font-size: 52px; margin-bottom: 15px; letter-spacing: 3px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        .hero p { font-size: 22px; margin-bottom: 35px; color: #dfba6b; font-weight: 300; }
-        .btn { background-color: #dfba6b; color: #22252a; padding: 14px 35px; text-decoration: none; font-weight: bold; border-radius: 4px; transition: all 0.3s; text-transform: uppercase; letter-spacing: 1px; display: inline-block; }
-        .btn:hover { background-color: #fff; color: #22252a; }
-        section { padding: 90px 20px; max-width: 1200px; margin: 0 auto; }
-        .section-title { text-align: center; font-size: 36px; margin-bottom: 50px; text-transform: uppercase; letter-spacing: 2px; position: relative; padding-bottom: 15px; }
-        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 2px; background-color: #dfba6b; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-        .card { background: white; border-radius: 6px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .card img { width: 100%; height: 250px; object-fit: cover; }
-        .card-content { padding: 25px; }
-        .card-content h3 { margin-bottom: 10px; font-size: 22px; }
-        .dark-section { background-color: #22252a; color: #fff; max-width: 100%; }
-        .dark-section .section-title { color: #fff; }
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #c5a880; 
+            --bg-light: #f9f9f9;
+            --text-dark: #222222;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Montserrat', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* --- NAVIGASYON --- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+            align-items: center;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: var(--accent-color);
+        }
+
+        .lang-switch {
+            background: transparent;
+            border: 1px solid var(--accent-color);
+            color: #ffffff;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-family: var(--font-sans);
+            font-size: 12px;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+
+        .lang-switch:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        /* --- INTRO VIDEO --- */
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            color: #ffffff;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-family: var(--font-serif);
+            font-size: 4rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent-color);
+        }
+
+        /* --- SEKSIYONLAR --- */
+        section {
+            padding: 100px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            font-weight: 400;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+            margin: 15px auto 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .media-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            aspect-ratio: 4/3;
+            background-color: #eee;
+        }
+
+        .media-card img, .media-card video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .media-card:hover img, .media-card:hover video {
+            transform: scale(1.05);
+        }
+
+        .bistro-videos {
+            grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+            margin-bottom: 30px;
+        }
         
-        /* Dalyan Bölümü Özel Stilleri */
-        .dalyan-section { background-color: #f4f2ee; max-width: 100%; }
-        .dalyan-images { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-        .dalyan-images img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; }
+        .bistro-videos .media-card {
+            aspect-ratio: 16/9;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 80px 20px 30px;
+            border-top: 2px solid var(--accent-color);
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-box h3 {
+            font-family: var(--font-serif);
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .footer-box p, .footer-box a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .footer-box a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-box i {
+            color: var(--accent-color);
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 12px;
+            color: #777;
+        }
+
+        /* --- WHATSAPP BUTONU --- */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 9999;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
 
         @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 10px; }
-            .nav-right { flex-direction: column; gap: 15px; }
-            .nav-menu { margin-right: 0; }
-            .hero h1 { font-size: 32px; }
-            .grid { grid-template-columns: 1fr; }
-            .dalyan-images { grid-template-columns: 1fr; }
+            nav ul { display: none; } 
+            .hero-content h1 { font-size: 2.5rem; }
+            section { padding: 60px 15px; }
+            .section-title h2 { font-size: 2.2rem; }
         }
     </style>
 </head>
@@ -57,112 +302,148 @@
 
     <header>
         <div class="nav-container">
-            <div class="logo">Olivia Dalyan</div>
-            <div class="nav-right">
-                <ul class="nav-menu">
-                    <li><a href="#otel" data-tr="Otel" data-en="Hotel">Otel</a></li>
-                    <li><a href="#dalyan" data-tr="Dalyan" data-en="Dalyan">Dalyan</a></li>
-                    <li><a href="#bistro" data-tr="Bistro" data-en="Bistro">Bistro</a></li>
-                    <li><a href="#iletisim" data-tr="İletişim" data-en="Contact">İletişim</a></li>
-                </ul>
-                <div class="lang-switcher">
-                    <button class="lang-btn active" onclick="switchLanguage('tr')">TR</button>
-                    <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
-                </div>
+            <div class="logo">
+                <img src="L1.PNG" alt="Olivia Logo">
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero" class="active" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                    <li><a href="#rooms" data-tr="Odalar" data-en="Rooms">Odalar</a></li>
+                    <li><a href="#bistro" data-tr="Kahvaltı & Bistro" data-en="Breakfast & Bistro">Kahvaltı & Bistro</a></li>
+                    <li><a href="#ambiance" data-tr="Ambiyans" data-en="Ambiance">Ambiyans</a></li>
+                    <li><a href="#contact" data-tr="İletişim" data-en="Contact">İletişim</a></li>
+                    <li><button class="lang-switch" onclick="toggleLanguage()">EN</button></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <video class="hero-video" autoplay loop muted playsinline>
-            <source src="1000239162.mp4" type="video/mp4">
+    <section id="hero" class="hero" style="padding:0; max-width:100%;">
+        <video autoplay muted loop playsinline>
+            <source src="T1.mp4" type="video/mp4">
         </video>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 data-tr="Dalyan'da Gizli Bir Cennet" data-en="A Hidden Paradise in Dalyan">Dalyan'da Gizli Bir Cennet</h1>
-            <p data-tr="Olivia Otel & Bistro'ya Hoş Geldiniz" data-en="Welcome to Olivia Hotel & Bistro">Olivia Otel & Bistro'ya Hoş Geldiniz</p>
-            <a href="#iletisim" class="btn" data-tr="Rezervasyon Yapın" data-en="Book Your Stay">Rezervasyon Yapın</a>
+            <h1 data-tr="Olivia'ya Hoş Geldiniz" data-en="Welcome to Olivia">Olivia'ya Hoş Geldiniz</h1>
+            <p data-tr="Dalyan'ın Kalbinde Premium Deneyim" data-en="Premium Experience in the Heart of Dalyan">Dalyan'ın Kalbinde Premium Deneyim</p>
         </div>
     </section>
 
-    <section id="otel">
-        <h2 class="section-title" data-tr="Konaklama Konforu" data-en="Accommodation Comfort">Konaklama Konforu</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="1000239153.jpg" alt="Deluxe Room">
-                <div class="card-content">
-                    <h3 data-tr="Deluxe Odalar" data-en="Deluxe Rooms">Deluxe Odalar</h3>
-                    <p data-tr="Dalyan'ın huzur veren doğasında, modern tasarım and konforun birleştiği benzersiz bir konaklama." data-en="A unique stay combining modern design and comfort in the peaceful nature of Dalyan.">Dalyan'ın huzur veren doğasında, modern tasarım and konforun birleştiği benzersiz bir konaklama.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="1000239150.jpg" alt="Suite Experience">
-                <div class="card-content">
-                    <h3 data-tr="Süit Deneyimi" data-en="Suite Experience">Süit Deneyimi</h3>
-                    <p data-tr="Geniş ve ferah yaşam alanlarıyla, tatilinizi unutulmaz kılacak özel detaylar." data-en="Spacious living areas with special touches designed to make your holiday unforgettable.">Geniş ve ferah yaşam alanlarıyla, tatilinizi unutulmaz kılacak özel detaylar.</p>
-                </div>
-            </div>
+    <section id="rooms">
+        <div class="section-title">
+            <h2 data-tr="Odalarımız" data-en="Our Rooms">Odalarımız</h2>
+        </div>
+        <div class="grid-container">
+            <div class="media-card"><img src="O1.jpeg" alt="Room 1"></div>
+            <div class="media-card"><img src="O2.jpeg" alt="Room 2"></div>
+            <div class="media-card"><img src="O3.jpeg" alt="Room 3"></div>
+            <div class="media-card"><img src="O4.jpeg" alt="Room 4"></div>
+            <div class="media-card"><img src="O5.jpeg" alt="Room 5"></div>
+            <div class="media-card"><img src="O6.jpeg" alt="Room 6"></div>
+            <div class="media-card"><img src="O7.jpeg" alt="Room 7"></div>
+            <div class="media-card"><img src="O8.jpeg" alt="Room 8"></div>
+            <div class="media-card"><img src="O9.jpeg" alt="Room 9"></div>
+            <div class="media-card"><img src="O10.jpeg" alt="Room 10"></div>
+            <div class="media-card"><img src="O11.jpeg" alt="Room 11"></div>
+            <div class="media-card"><img src="O12.jpeg" alt="Room 12"></div>
+            <div class="media-card"><img src="O13.jpeg" alt="Room 13"></div>
+            <div class="media-card"><img src="O14.jpeg" alt="Room 14"></div>
+            <div class="media-card"><img src="O15.jpeg" alt="Room 15"></div>
+            <div class="media-card"><img src="O16.jpeg" alt="Room 16"></div>
+            <div class="media-card"><img src="O17.jpeg" alt="Room 17"></div>
         </div>
     </section>
 
-    <section id="dalyan" class="dalyan-section">
-        <div style="max-width: 1200px; margin: 0 auto;" class="grid">
-            <div style="display: flex; flex-direction: column; justify-content: center; padding: 20px;">
-                <h2 class="section-title" style="text-align: left; padding-bottom: 10px;" data-tr="Dalyan'ın Büyüsünü Keşfedin" data-en="Discover the Magic of Dalyan">Dalyan'ın Büyüsünü Keşfedin</h2>
-                <p style="font-size: 17px; margin-bottom: 15px;" data-tr="Kral kaya mezarlarının gölgesinde, Caretta carettaların evinde eşsiz bir sabah. Güne tamamen doğal ve zengin Dalyan kahvaltımızla başlayın." data-en="A unique morning in the shadow of the ancient king rock tombs, home of the Caretta carettas. Start your day with our all-natural and rich Dalyan breakfast.">Kral kaya mezarlarının gölgesinde, Caretta carettaların evinde eşsiz bir sabah. Güne tamamen doğal ve zengin Dalyan kahvaltımızla başlayın.</p>
-            </div>
-            <div class="dalyan-images">
-                <img src="https://images.unsplash.com/photo-1547149666-769b42053e67?auto=format&fit=crop&w=600&q=80" alt="Dalyan Rock Tombs">
-                <img src="https://images.unsplash.com/photo-1559583985-c80d8ad9b29f?auto=format&fit=crop&w=600&q=80" alt="Caretta Caretta">
-                <img src="1000239162.jpg" alt="Kahvaltı">
-                <img src="1000239334.jpg" alt="Reçeller">
-            </div>
+    <section id="bistro" style="background-color: var(--bg-light);">
+        <div class="section-title">
+            <h2 data-tr="Kahvaltı & Bistro" data-en="Breakfast & Bistro">Kahvaltı & Bistro</h2>
+        </div>
+        
+        <div class="grid-container bistro-videos">
+            <div class="media-card"><video autoplay muted loop playsinline><source src="V1.mp4" type="video/mp4"></video></div>
+            <div class="media-card"><video autoplay muted loop playsinline><source src="V2.mp4" type="video/mp4"></video></div>
+        </div>
+
+        <div class="grid-container">
+            <div class="media-card"><img src="B1.jpeg" alt="Bistro 1"></div>
+            <div class="media-card"><img src="B2.jpeg" alt="Bistro 2"></div>
+            <div class="media-card"><img src="B3.jpeg" alt="Bistro 3"></div>
+            <div class="media-card"><img src="B4.jpeg" alt="Bistro 4"></div>
+            <div class="media-card"><img src="B5.jpeg" alt="Bistro 5"></div>
+            <div class="media-card"><img src="B6.jpeg" alt="Bistro 6"></div>
+            <div class="media-card"><img src="B7.jpeg" alt="Bistro 7"></div>
+            <div class="media-card"><img src="B8.jpeg" alt="Bistro 8"></div>
+            <div class="media-card"><img src="B9.jpeg" alt="Bistro 9"></div>
+            <div class="media-card"><img src="B10.jpeg" alt="Bistro 10"></div>
+            <div class="media-card"><img src="B11.jpeg" alt="Bistro 11"></div>
+            <div class="media-card"><img src="B12.jpeg" alt="Bistro 12"></div>
+            <div class="media-card"><img src="B13.jpeg" alt="Bistro 13"></div>
         </div>
     </section>
 
-    <section id="bistro" class="dark-section">
-        <h2 class="section-title" data-tr="Bistro Lezzetleri & Ambiyans" data-en="Bistro Flavors & Ambience">Bistro Lezzetleri & Ambiyans</h2>
-        <div class="grid">
-            <div class="card" style="background:#2a2e35; color:#fff;">
-                <img src="1000239160.jpg" alt="Stone Oven">
-                <div class="card-content">
-                    <h3 style="color:#dfba6b;" data-tr="Özel Taş Fırın & Izgara" data-en="Stone Oven & Grill">Özel Taş Fırın & Izgara</h3>
-                    <p style="color:#ccc;" data-tr="Özenle marine edilmiş etler ve taş fırınımızdan sıcak çıkan çıtır pizzalar." data-en="Carefully marinated meats and crispy pizzas served hot straight from our traditional stone oven.">Özenle marine edilmiş etler ve taş fırınımızdan sıcak çıkan çıtır pizzalar.</p>
-                </div>
-            </div>
-            <div class="card" style="background:#2a2e35; color:#fff;">
-                <img src="1000239159.jpg" alt="Olivia Bar">
-                <div class="card-content">
-                    <h3 style="color:#dfba6b;" data-tr="Bar & Plak Ruhu" data-en="Bar & Vinyl Soul">Bar & Plak Ruhu</h3>
-                    <p style="color:#ccc;" data-tr="Nostaljik plak tonları ve loş ışıkların eşlik ettiği yaşayan bir akşam ambiyansı." data-en="A vibrant evening atmosphere enriched by nostalgic vinyl tunes and warm, dim lighting.">Nostaljik plak tonları ve loş ışıkların eşlik ettiği yaşayan bir akşam ambiyansı.</p>
-                </div>
-            </div>
+    <section id="ambiance">
+        <div class="section-title">
+            <h2 data-tr="Ambiyans" data-en="Ambiance">Ambiyans</h2>
+        </div>
+        <div class="grid-container">
+            <div class="media-card"><img src="A1.jpeg" alt="Ambiance 1"></div>
+            <div class="media-card"><img src="A2.jpeg" alt="Ambiance 2"></div>
+            <div class="media-card"><img src="A3.jpeg" alt="Ambiance 3"></div>
+            <div class="media-card"><img src="A4.jpeg" alt="Ambiance 4"></div>
+            <div class="media-card"><img src="A5.jpeg" alt="Ambiance 5"></div>
+            <div class="media-card"><img src="A6.jpeg" alt="Ambiance 6"></div>
+            <div class="media-card"><img src="A7.jpeg" alt="Ambiance 7"></div>
+            <div class="media-card"><img src="A8.jpeg" alt="Ambiance 8"></div>
+            <div class="media-card"><img src="A9.jpeg" alt="Ambiance 9"></div>
+            <div class="media-card"><img src="A10.jpeg" alt="Ambiance 10"></div>
+            <div class="media-card"><img src="A11.jpeg" alt="Ambiance 11"></div>
+            <div class="media-card"><img src="A12.jpeg" alt="Ambiance 12"></div>
+            <div class="media-card"><img src="A13.jpeg" alt="Ambiance 13"></div>
+            <div class="media-card"><img src="A14.jpeg" alt="Ambiance 14"></div>
+            <div class="media-card"><img src="A15.jpeg" alt="Ambiance 15"></div>
+            <div class="media-card"><img src="A16.jpeg" alt="Ambiance 16"></div>
+            <div class="media-card"><img src="A17.jpeg" alt="Ambiance 17"></div>
+            <div class="media-card"><img src="A18.jpeg" alt="Ambiance 18"></div>
+            <div class="media-card"><img src="A19.jpeg" alt="Ambiance 19"></div>
+            <div class="media-card"><img src="A20.jpeg" alt="Ambiance 20"></div>
+            <div class="media-card"><img src="A21.jpeg" alt="Ambiance 21"></div>
+            <div class="media-card"><img src="A22.jpeg" alt="Ambiance 22"></div>
+            <div class="media-card"><img src="A23.jpeg" alt="Ambiance 23"></div>
         </div>
     </section>
 
-    <section id="iletisim" style="background-color: #22252a; color: #fff; max-width: 100%;">
-        <h2 class="section-title" data-tr="İletişim & Rezervasyon" data-en="Contact & Reservation">İletişim & Rezervasyon</h2>
-        <div class="contact-container">
-            <p data-tr="Dalyan’ın kalbinde yerinizi şimdiden ayırtın." data-en="Book your spot now in the heart of Dalyan.">Dalyan’ın kalbinde yerinizi şimdiden ayırtın.</p>
-            <p style="color: #dfba6b; font-size: 22px; margin: 20px 0;"><strong>Phone:</strong> +90 (252) XXX XX XX</p>
-            <a href="tel:+902520000000" class="btn" data-tr="Hemen Ara" data-en="Call Now">Hemen Ara</a>
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>Olivia Hotel & Bistro</h3>
+                <p data-tr="Dalyan'da lüks ve lezzetin buluşma noktası." data-en="Where luxury and taste meet in Dalyan.">Dalyan'da lüks ve lezzetin buluşma noktası.</p>
+            </div>
+            <div class="footer-box">
+                <h3 data-tr="İletişim" data-en="Contact">İletişim</h3>
+                <p><i class="fa-solid fa-phone"></i> <a href="tel:+902522845484" style="display:inline; color:#ccc;">+90 (252) 284 54 84</a></p>
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@oliviaotelbistro.com" style="display:inline; color:#ccc;">info@oliviaotelbistro.com</a></p>
+            </div>
+            <div class="footer-box">
+                <h3 data-tr="Adres" data-en="Address">Adres</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Dalyan, Ortaca / Muğla, Türkiye</p>
+            </div>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Olivia Otel & Bistro. All Rights Reserved.</p>
+        <div class="copyright">
+            <p>&copy; 2026 Olivia Hotel Bistro. All Rights Reserved.</p>
+        </div>
     </footer>
 
+    <a href="https://wa.me/905413836654?text=Merhaba,%20bilgi%20almak%20istiyorum." class="whatsapp-btn" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
     <script>
-        function switchLanguage(lang) {
-            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
+        let currentLang = 'tr';
+        function toggleLanguage() {
+            currentLang = currentLang === 'tr' ? 'en' : 'tr';
+            document.querySelector('.lang-switch').innerText = currentLang === 'tr' ? 'EN' : 'TR';
             document.querySelectorAll('[data-tr]').forEach(element => {
-                if (lang === 'tr') {
-                    element.textContent = element.getAttribute('data-tr');
-                } else {
-                    element.textContent = element.getAttribute('data-en');
-                }
+                element.innerText = element.getAttribute(data-${currentLang});
             });
         }
     </script>
